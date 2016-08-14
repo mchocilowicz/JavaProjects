@@ -1,0 +1,12 @@
+com\example\CustomAuthenticationProvider.class
+com\example\model\Message.class
+com\example\service\HessianChat.class
+com\example\CustomAuthenticationProvider$1.class
+com\example\BhXchatClientApplication.class
+com\example\controller\ChatController.class
+com\example\service\BurlapChat.class
+com\example\service\RpcChat.class
+com\example\model\CustomUserDetails.class
+com\example\LogoutListener.class
+com\example\SecurityConfig.class
+com\example\WebConfig.class

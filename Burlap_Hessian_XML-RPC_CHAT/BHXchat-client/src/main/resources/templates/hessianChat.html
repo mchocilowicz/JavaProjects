@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/css/main.css" />
+<title>HessianChat</title>
+</head>
+<body>
+<div th:include="navbar"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="panel panel-primary">
+					<div class="panel-heading" id="accordion">
+						<span class="glyphicon glyphicon-comment"></span> Chat
+						<div class="btn-group pull-right">
+							<a type="button" class="btn btn-default btn-xs"
+								data-toggle="collapse" data-parent="#accordion"
+								href="#collapseOne"> <span
+								class="glyphicon glyphicon-chevron-down"></span>
+							</a>
+						</div>
+					</div>
+					<div class="panel-collapse collapse in" id="collapseOne">
+						<div class="panel-body" id="chatBody">
+							<p id="chatText"></p>
+							<div id="chatBottom"></div>
+						</div>
+						<form action="/hessian" method="post">
+							<div class="panel-footer">
+								<div class="input-group">
+									<input id="btn-input" name="message" type="text"
+										class="form-control input-sm"
+										placeholder="Type your message here..." autofocus="" required="" minlength="2" /> <span
+										class="input-group-btn">
+										<button class="btn btn-warning btn-sm" id="btn-chat">
+											Send</button>
+									</span>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/hessian.js"></script>
+</body>
+</html>

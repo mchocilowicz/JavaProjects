@@ -1,0 +1,9 @@
+com\example\BhXchatApplication.class
+com\example\service\RpcChatImpl.class
+com\example\service\HessianChatService.class
+com\example\service\BurlapChat.class
+com\example\service\RpcChat.class
+com\example\service\BurlapChatService.class
+com\example\model\Message.class
+com\example\WebConfig.class
+com\example\service\HessianChat.class
